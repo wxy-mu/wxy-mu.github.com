@@ -20,7 +20,7 @@
 使用npm安装插件：npm install gulp-less  -g  --save-dev
 -g 全局安装  安装在C:\Users\Administrator\AppData\Roaming\npm  下面，通过命令行在任意地方调用，不全局会下载在项目的 node_modules下面
 –">
-<meta property="og:updated_time" content="2017-07-24T16:18:50.000Z">
+<meta property="og:updated_time" content="2017-07-24T18:14:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp 使用">
 <meta name="twitter:description" content="gulp 学习之路环境准备安装node.js和npm(node package manager)包管理器
@@ -79,6 +79,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -193,11 +197,13 @@
 <li>-dev 保存至 package.json的devDependencies 节点 ，不指定保存在dependencies节点<br><code>npm install --production</code> 下载dependencies节点的包</li>
 <li>卸载插件 <code>npm uninstall &lt;name&gt; [-g] [--save-dev]</code></li>
 <li>更新插件  <code>npm update [--save-dev]</code></li>
-<li>安装插件目录 <code>npm list</code>  // 查看npm帮助   <code>npm help</code><h3 id="使用gulp"><a href="#使用gulp" class="headerlink" title="使用gulp"></a>使用gulp</h3>A.安装gulp<ol>
+<li>安装插件目录 <code>npm list</code>  // 查看npm帮助   <code>npm help</code></li>
+</ol>
+<a id="more"></a>
+<h3 id="使用gulp"><a href="#使用gulp" class="headerlink" title="使用gulp"></a>使用gulp</h3><p> A.安装gulp</p>
+<ol>
 <li><code>npm install gulp -g</code>  安装命令</li>
 <li><code>gulp -v</code> 查看版本<br>B.新建package.json文件（如下文）<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"qn-wd-wangwang"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="string">"directories"</span>: &#123;</div><div class="line">    <span class="string">"doc"</span>: <span class="string">"doc"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"dependencies"</span>: &#123;&#125;,</div><div class="line">  <span class="string">"devDependencies"</span>: &#123;</div><div class="line">    <span class="string">"gulp"</span>: <span class="string">"^3.9.1"</span>,</div><div class="line">    <span class="string">"gulp-clean"</span>: <span class="string">"^0.3.2"</span>,</div><div class="line">    <span class="string">"gulp-clean-css"</span>: <span class="string">"^2.3.2"</span>,</div><div class="line">    <span class="string">"gulp-concat"</span>: <span class="string">"^2.6.1"</span>,</div><div class="line">    <span class="string">"gulp-htmlmin"</span> : <span class="string">"^3.0.0"</span>,</div><div class="line">    <span class="string">"gulp-inline-source"</span>: <span class="string">"^3.1.0"</span>,</div><div class="line">    <span class="string">"gulp-less"</span>: <span class="string">"^3.3.0"</span>,</div><div class="line">    <span class="string">"gulp-rename"</span>: <span class="string">"^1.2.2"</span>,</div><div class="line">    <span class="string">"gulp-replace"</span>: <span class="string">"^0.6.1"</span>,</div><div class="line">    <span class="string">"gulp-rev"</span>: <span class="string">"^7.1.2"</span>,</div><div class="line">    <span class="string">"gulp-rev-append"</span>: <span class="string">"^0.1.8"</span>,</div><div class="line">    <span class="string">"gulp-uglify"</span>: <span class="string">"^2.0.0"</span>,</div><div class="line">    <span class="string">"less-plugin-autoprefix"</span> : <span class="string">"^1.5.1"</span>,</div><div class="line">    <span class="string">"node-static"</span>: <span class="string">"^0.7.9"</span>,</div><div class="line">    <span class="string">"open"</span>: <span class="string">"^0.0.5"</span>,</div><div class="line">    <span class="string">"pump"</span>: <span class="string">"^1.0.2"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"start"</span>: <span class="string">"gulp default &amp; gulp watch"</span>,</div><div class="line">    <span class="string">"build"</span>: <span class="string">"gulp dist "</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"repository"</span>: &#123;</div><div class="line">    <span class="string">"type"</span>: <span class="string">"git"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"git@git.superboss.cc:raycloudFrontEnd/qn-wd-wangwang.git"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
 </li>
 </ol>
 <p><em>npm help package.json</em>命令提示符执行</p>
@@ -415,13 +421,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -522,6 +536,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">逗比，文艺 女程序员</div>
+  	  	
+    	</section>
     
   </div>
   

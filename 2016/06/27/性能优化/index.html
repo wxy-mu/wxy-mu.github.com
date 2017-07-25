@@ -20,7 +20,7 @@ repaint(重绘)和reflow(重排)1.重绘一个">
 2.因为在请求里面会有很多的图片，文件等需要耗费时间加载，会耗性能
 3.解决方式：合并图片(css sprites)，尽量减少js和css文件，图片较多的页面用lazyload技术进行优化(这个方法没试过。。)
 repaint(重绘)和reflow(重排)1.重绘一个">
-<meta property="og:updated_time" content="2017-07-24T16:30:07.000Z">
+<meta property="og:updated_time" content="2017-07-24T18:14:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浏览器性能优化">
 <meta name="twitter:description" content="减少http请求1.通过url向服务器建立连接，然后浏览器向服务器发送请求，服务器再返回响应的信息，浏览器收到信息以后，对数据执行
@@ -79,6 +79,10 @@ repaint(重绘)和reflow(重排)1.重绘一个">
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -191,7 +195,8 @@ repaint(重绘)和reflow(重排)1.重绘一个">
 3.解决方式：合并图片(css sprites)，尽量减少js和css文件，图片较多的页面用lazyload技术进行优化(这个方法没试过。。)
 </code></pre><h5 id="repaint-重绘-和reflow-重排"><a href="#repaint-重绘-和reflow-重排" class="headerlink" title="repaint(重绘)和reflow(重排)"></a>repaint(重绘)和reflow(重排)</h5><pre><code>1.重绘一个元素的外观被改变，例如visibility，背景色等
 2.重排是dom变化影响了元素的几何元素，宽高 解决方案：不要用style，加class名字，有动画效果用position设置，因为脱离文档流，就不会改变布局。。减少reflow
-</code></pre><h5 id="减少Dom减少"><a href="#减少Dom减少" class="headerlink" title="减少Dom减少"></a>减少Dom减少</h5><pre><code>1.改变dom结构，对dom进行循环解决方案：较少dom元素的查询和修改，查询时赋值给局部变量，我个人理解就是将循环出来的变量赋值，然后用这个值去填入
+</code></pre>  <a id="more"></a>
+<h5 id="减少Dom减少"><a href="#减少Dom减少" class="headerlink" title="减少Dom减少"></a>减少Dom减少</h5><pre><code>1.改变dom结构，对dom进行循环解决方案：较少dom元素的查询和修改，查询时赋值给局部变量，我个人理解就是将循环出来的变量赋值，然后用这个值去填入
 </code></pre><h5 id="使用json进行数据狡猾"><a href="#使用json进行数据狡猾" class="headerlink" title="使用json进行数据狡猾"></a>使用json进行数据狡猾</h5><pre><code>1.与xml相比json用压缩后文件比较小。json是比较好用。。。各种发ajax回来
 </code></pre><h5 id="高效使用HTML和css样式"><a href="#高效使用HTML和css样式" class="headerlink" title="高效使用HTML和css样式"></a>高效使用HTML和css样式</h5><pre><code>1.合理用html~怎么合理，感觉很抽象，就尽量遵守规范的用
 2.css的话选择器是从右到左解析..就是不要范二写div ul li a{}这种。。shability。。
@@ -420,13 +425,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -527,6 +540,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">逗比，文艺 女程序员</div>
+  	  	
+    	</section>
     
   </div>
   

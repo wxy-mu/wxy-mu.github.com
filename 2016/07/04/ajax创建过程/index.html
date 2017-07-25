@@ -24,7 +24,7 @@ ajax的过程1. 新建一个XMLHttpRequest对象。
 到底我讲的对不对。。算了，我整理一下~给自己看吧。既然找不到25k的男人，就做一个25k的女人。
 ajax的过程1. 新建一个XMLHttpRequest对象。
 2. 调用open()方法。传三">
-<meta property="og:updated_time" content="2017-07-24T16:30:40.000Z">
+<meta property="og:updated_time" content="2017-07-24T18:14:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="拼命发ajax的life。">
 <meta name="twitter:description" content="题外话前几天听同事吐槽，卧槽，我竟然发ajax在这里发了一年多了，哎~ajax封装以后也就是那几个属性。
@@ -85,6 +85,10 @@ ajax的过程1. 新建一个XMLHttpRequest对象。
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -202,7 +206,8 @@ ajax的过程1. 新建一个XMLHttpRequest对象。
   xhr.open(&quot;get&quot;,url,false) 注意：open是预备状态，没有发送特定请求
 3. 调用send()方法。传入data,有时候有些请求也不用发送给后台数据，那就放一个null进去就好了，
   这个是真的请求发过去了。
-</code></pre><h4 id="和后台"><a href="#和后台" class="headerlink" title="和后台"></a>和后台</h4><pre><code>在后台java代码里面有一个对应的request，和respone。。
+</code></pre><a id="more"></a>
+<h4 id="和后台"><a href="#和后台" class="headerlink" title="和后台"></a>和后台</h4><pre><code>在后台java代码里面有一个对应的request，和respone。。
 request写明了他这个controller需要前台给他什么数据，然后逻辑处理以后，
 将返回给前端的数据放在respone里面。
 当前端那边得到请求成功的信息以后，拿到这些数据，在做相应的逻辑处理。
@@ -462,13 +467,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -569,6 +582,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">逗比，文艺 女程序员</div>
+  	  	
+    	</section>
     
   </div>
   
