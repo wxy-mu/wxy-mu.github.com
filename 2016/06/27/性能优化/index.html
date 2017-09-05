@@ -20,7 +20,7 @@ repaint(重绘)和reflow(重排)1.重绘一个">
 2.因为在请求里面会有很多的图片，文件等需要耗费时间加载，会耗性能
 3.解决方式：合并图片(css sprites)，尽量减少js和css文件，图片较多的页面用lazyload技术进行优化(这个方法没试过。。)
 repaint(重绘)和reflow(重排)1.重绘一个">
-<meta property="og:updated_time" content="2017-07-24T18:14:37.000Z">
+<meta property="og:updated_time" content="2017-09-05T02:24:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浏览器性能优化">
 <meta name="twitter:description" content="减少http请求1.通过url向服务器建立连接，然后浏览器向服务器发送请求，服务器再返回响应的信息，浏览器收到信息以后，对数据执行
@@ -258,17 +258,6 @@ repaint(重绘)和reflow(重排)1.重绘一个">
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/性能优化/" class="article-tag-list-link color5">性能优化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -499,7 +488,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 </pre>
           </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr='href:path index.html|urlformat' class="search-title" ><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <a q-attr='href:path|urlformat' class="search-title" ><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
             <p class="search-time">
               <i class="icon-calendar icon"></i>
               <span q-text="date|dateformat"></span>
