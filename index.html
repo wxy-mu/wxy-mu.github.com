@@ -187,8 +187,6 @@
 <li><p>回顾 原型，构造函数，实例的关系</br> 每个构造函数都有一个原型对象，原型对象包含一个指向构造函数的指针，而实例包含了一个指向原型对象的内部指针。。</br><br>如图所示：<br><img src="http://ww1.sinaimg.cn/large/a1dd3015gy1fn4z46u6xxj20q20ckt8z.jpg" alt=""></p>
 <ul>
 <li><p>实现原型链</br> 原理：原型对象等于另一个类型的实例，原型对象将包含一个指向另一个原型的指针，相应地，另一个原型中包含着一个指向另一个构造函数的指针。加入另一个原型又是另一个类型的实例，那么上述关系依旧成立。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.property = <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line">A.prototype.getSuperValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.property;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.subproperty = <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//继承关键</span></div><div class="line">B.prototype = <span class="keyword">new</span> A();</div><div class="line">B.prototype.getValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.subproperty;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> C= <span class="keyword">new</span> B();</div><div class="line">C.getSuperValue（）</div></pre></td></tr></table></figure>
-<p>如图所示<br><img src="http://ww1.sinaimg.cn/large/a1dd3015gy1fn4zn42w2zj21140cswew.jpg" alt=""><br>代码解读 </br> 定义了A和B类型,各自有一个属性和方法，区别是B继承了A，而继承是通过创建A的实例。<br>没有使用B的默认原型，把他的新原型换成了A的实例， 所以B的原型拥有了A的实例拥有的全部属性和方法，也有了一个指向A的指针。所以上述的代码里面，C指向B的原型，而B的原型又指向A。getSuperValue()方法在A.prototype的原型中.因为property是一个实例属性，getSuperValue是原型方法，现在B.peototype是A的实例，property当然位于实例中。<br>搜寻机制： 搜查实例 -&gt;搜索B的原型-&gt;搜索A的原型</p>
         
           <a class="article-more-a" href="/2018/01/09/关于继承/index.html#more">more >></a>
         
@@ -913,11 +911,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color5">前端基础</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">前端基础</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
             
             <div class="clearfix"></div>
