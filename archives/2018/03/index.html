@@ -6,27 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>gulp 使用 | 小木</title>
+  <title>Archives: 2018/3 | 小木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="gulp 学习之路环境准备安装node.js和npm(node package manager)包管理器
-使用npm安装插件：npm install gulp-less  -g  --save-dev
--g 全局安装  安装在C:\Users\Administrator\AppData\Roaming\npm  下面，通过命令行在任意地方调用，不全局会下载在项目的 node_modules下面
-–">
-<meta property="og:type" content="article">
-<meta property="og:title" content="gulp 使用">
-<meta property="og:url" content="http://yoursite.com/2017/07/24/gulp初级入门学习/index.html">
+  <meta name="description" content="如果没有陪你颠沛流离，那就做自己心中的太阳">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小木">
+<meta property="og:url" content="http://yoursite.com/archives/2018/03/index.html">
 <meta property="og:site_name" content="小木">
-<meta property="og:description" content="gulp 学习之路环境准备安装node.js和npm(node package manager)包管理器
-使用npm安装插件：npm install gulp-less  -g  --save-dev
--g 全局安装  安装在C:\Users\Administrator\AppData\Roaming\npm  下面，通过命令行在任意地方调用，不全局会下载在项目的 node_modules下面
-–">
-<meta property="og:updated_time" content="2017-07-25T01:50:18.000Z">
+<meta property="og:description" content="如果没有陪你颠沛流离，那就做自己心中的太阳">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp 使用">
-<meta name="twitter:description" content="gulp 学习之路环境准备安装node.js和npm(node package manager)包管理器
-使用npm安装插件：npm install gulp-less  -g  --save-dev
--g 全局安装  安装在C:\Users\Administrator\AppData\Roaming\npm  下面，通过命令行在任意地方调用，不全局会下载在项目的 node_modules下面
-–">
+<meta name="twitter:title" content="小木">
+<meta name="twitter:description" content="如果没有陪你颠沛流离，那就做自己心中的太阳">
   
     <link rel="alternative" href="/atom.xml" title="小木" type="application/atom+xml">
   
@@ -169,217 +159,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-gulp初级入门学习" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      gulp 使用
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/03/06/Redux分享/" class="archive-article-date">
+  	<time datetime="2018-03-06T15:35:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/03/06/Redux分享/">Redux 分享一</a>
     </h1>
   
 
-        
-        <a href="/2017/07/24/gulp初级入门学习/" class="archive-article-date">
-  	<time datetime="2017-07-24T15:12:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="gulp-学习之路"><a href="#gulp-学习之路" class="headerlink" title="gulp 学习之路"></a>gulp 学习之路</h2><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><h5 id="安装node-js和npm-node-package-manager-包管理器"><a href="#安装node-js和npm-node-package-manager-包管理器" class="headerlink" title="安装node.js和npm(node package manager)包管理器"></a>安装node.js和npm(node package manager)包管理器</h5><ol>
-<li>使用npm安装插件：<code>npm install gulp-less  -g  --save-dev</code></li>
-<li>-g 全局安装  安装在C:\Users\Administrator\AppData\Roaming\npm  下面，通过命令行在任意地方调用，不全局会下载在项目的 <code>node_modules</code>下面</li>
-<li>–save 将保存配置信息至 package.json(node.js项目配置文件)</li>
-<li>-dev 保存至 package.json的devDependencies 节点 ，不指定保存在dependencies节点<br><code>npm install --production</code> 下载dependencies节点的包</li>
-<li>卸载插件 <code>npm uninstall &lt;name&gt; [-g] [--save-dev]</code></li>
-<li>更新插件  <code>npm update [--save-dev]</code></li>
-<li>安装插件目录 <code>npm list</code>  // 查看npm帮助   <code>npm help</code></li>
-</ol>
-<a id="more"></a>
-<h3 id="使用gulp"><a href="#使用gulp" class="headerlink" title="使用gulp"></a>使用gulp</h3><p> A.安装gulp</p>
-<ol>
-<li><code>npm install gulp -g</code>  安装命令</li>
-<li><code>gulp -v</code> 查看版本<br>B.新建package.json文件（如下文）<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"qn-wd-wangwang"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="string">"directories"</span>: &#123;</div><div class="line">    <span class="string">"doc"</span>: <span class="string">"doc"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"dependencies"</span>: &#123;&#125;,</div><div class="line">  <span class="string">"devDependencies"</span>: &#123;</div><div class="line">    <span class="string">"gulp"</span>: <span class="string">"^3.9.1"</span>,</div><div class="line">    <span class="string">"gulp-clean"</span>: <span class="string">"^0.3.2"</span>,</div><div class="line">    <span class="string">"gulp-clean-css"</span>: <span class="string">"^2.3.2"</span>,</div><div class="line">    <span class="string">"gulp-concat"</span>: <span class="string">"^2.6.1"</span>,</div><div class="line">    <span class="string">"gulp-htmlmin"</span> : <span class="string">"^3.0.0"</span>,</div><div class="line">    <span class="string">"gulp-inline-source"</span>: <span class="string">"^3.1.0"</span>,</div><div class="line">    <span class="string">"gulp-less"</span>: <span class="string">"^3.3.0"</span>,</div><div class="line">    <span class="string">"gulp-rename"</span>: <span class="string">"^1.2.2"</span>,</div><div class="line">    <span class="string">"gulp-replace"</span>: <span class="string">"^0.6.1"</span>,</div><div class="line">    <span class="string">"gulp-rev"</span>: <span class="string">"^7.1.2"</span>,</div><div class="line">    <span class="string">"gulp-rev-append"</span>: <span class="string">"^0.1.8"</span>,</div><div class="line">    <span class="string">"gulp-uglify"</span>: <span class="string">"^2.0.0"</span>,</div><div class="line">    <span class="string">"less-plugin-autoprefix"</span> : <span class="string">"^1.5.1"</span>,</div><div class="line">    <span class="string">"node-static"</span>: <span class="string">"^0.7.9"</span>,</div><div class="line">    <span class="string">"open"</span>: <span class="string">"^0.0.5"</span>,</div><div class="line">    <span class="string">"pump"</span>: <span class="string">"^1.0.2"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"start"</span>: <span class="string">"gulp default &amp; gulp watch"</span>,</div><div class="line">    <span class="string">"build"</span>: <span class="string">"gulp dist "</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"repository"</span>: &#123;</div><div class="line">    <span class="string">"type"</span>: <span class="string">"git"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"git@git.superboss.cc:raycloudFrontEnd/qn-wd-wangwang.git"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><em>npm help package.json</em>命令提示符执行</p>
-<h5 id="gulp-插件介绍"><a href="#gulp-插件介绍" class="headerlink" title="gulp 插件介绍"></a>gulp 插件介绍</h5><ol>
-<li>压缩html 插件   <code>gulp-htmlmin</code></li>
-<li>将html中的链接的代码(代码量不大)压缩进html内   <code>gulp-inline-source</code></li>
-<li>重新命名一个文件   <code>gulp-rename</code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"framework/js/Tatami.onpageload.js"</span> inline&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"> gulp.task(<span class="string">'html'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> options = &#123;</div><div class="line">      <span class="attr">removeComments</span>: <span class="literal">true</span>,<span class="comment">//清除HTML注释</span></div><div class="line">      collapseWhitespace: <span class="literal">true</span>,<span class="comment">//压缩HTML</span></div><div class="line">      collapseBooleanAttributes: <span class="literal">true</span>,<span class="comment">//省略布尔属性的值 </span></div><div class="line">      removeEmptyAttributes: <span class="literal">true</span>,<span class="comment">//删除所有空格作属性值 </span></div><div class="line">      removeScriptTypeAttributes: <span class="literal">true</span>,<span class="comment">//删除&lt;script&gt;的type="text/javascript"</span></div><div class="line">      removeStyleLinkTypeAttributes: <span class="literal">true</span>,<span class="comment">//删除&lt;style&gt;和&lt;link&gt;的type="text/css"</span></div><div class="line">      minifyJS: <span class="literal">true</span>,<span class="comment">//压缩页面JS</span></div><div class="line">      minifyCSS: <span class="literal">true</span>,<span class="comment">//压缩css</span></div><div class="line">  &#125;;</div><div class="line">  gulp.src(<span class="string">'./_index.html'</span>)</div><div class="line">      .pipe(inlinesource())</div><div class="line">      **pipe(htmlmin(options))**</div><div class="line">      .pipe(rename(<span class="string">"./index.html"</span>))</div><div class="line">      .pipe(gulp.dest(<span class="string">'.'</span>))  </div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>1.合并多个文件夹   <code>gulp-concat</code>   编译js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'js'</span>, [<span class="string">'clean'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> gulp.src(moduleFile)</div><div class="line">  .pipe(concat(<span class="string">'modules.js'</span>))</div><div class="line">  .pipe(gulp.dest(<span class="string">'./modules'</span>))</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>2.压缩js   <code>gulp-uglify</code><br>3.在文件名字后面加版本号 <code>gulp-rev</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'minify:js'</span>, [<span class="string">'js'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   <span class="keyword">return</span> gulp.src(<span class="string">'./modules/modules.js'</span>)</div><div class="line">    .pipe(minifyJs())</div><div class="line">    .pipe(rev())</div><div class="line">    .pipe(gulp.dest(<span class="string">'./modules'</span>))</div><div class="line">    .pipe(rev.manifest()) <span class="comment">// 生成json文件</span></div><div class="line">    .pipe(gulp.dest(<span class="string">'./dist'</span>))</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>4.替换文件 <code>gulp-replace</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">gulp.src(<span class="string">'./_index.html'</span>)</div><div class="line">     .pipe(replace(<span class="string">'modules/modules.js'</span>,<span class="string">`modules/<span class="subst">$&#123;json[<span class="string">'modules.js'</span>]&#125;</span>`</span>))</div><div class="line">     .pipe(replace(<span class="string">'combine.min.css'</span>,<span class="string">`<span class="subst">$&#123;css[<span class="string">'combine.min.css'</span>]&#125;</span>`</span>))</div><div class="line">     .pipe(inlinesource())</div><div class="line">     .pipe(htmlmin(options))</div><div class="line">     .pipe(rename(<span class="string">"./index.html"</span>))</div><div class="line">     .pipe(gulp.dest(<span class="string">'.'</span>))  </div><div class="line"> &#125;);</div></pre></td></tr></table></figure></p>
-<h6 id="新建gulpfile文件-基础文件"><a href="#新建gulpfile文件-基础文件" class="headerlink" title="新建gulpfile文件(基础文件)"></a>新建gulpfile文件(基础文件)</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>), </div><div class="line">    less = <span class="built_in">require</span>(<span class="string">'gulp-less'</span>);</div><div class="line">gulp.task(<span class="string">'testLess'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.src(<span class="string">'src/less/index.less'</span>) <span class="comment">//该任务针对的文件</span></div><div class="line">        .pipe(less()) <span class="comment">//该任务调用的模块</span></div><div class="line">        .pipe(gulp.dest(<span class="string">'src/css'</span>)); <span class="comment">//将会在src/css下生成index.css</span></div><div class="line">&#125;);</div><div class="line">gulp.task(<span class="string">'default'</span>,[<span class="string">'testLess'</span>, <span class="string">'elseTask'</span>]);</div></pre></td></tr></table></figure>
-<h2 id="项目实际运用即问题"><a href="#项目实际运用即问题" class="headerlink" title="项目实际运用即问题"></a>项目实际运用即问题</h2><h5 id="优化html"><a href="#优化html" class="headerlink" title="优化html"></a>优化html</h5><p>1.删除不必要的代码<br>2.把所有的css和js合并称一个文件，并且在打包的时候给文件加后缀，确保没有<br>   js和css的缓存<br>   1.在打包的时候，将编译好的文件压缩出一个新的带后缀名的js，<br>     然后替换在html中的文件名<br>3.把重要且小的文件打入html，<br>   以防止没有很快加载出来，代码报错，并且压缩html</p>
-<h5 id="写过程中的困难"><a href="#写过程中的困难" class="headerlink" title="写过程中的困难"></a>写过程中的困难</h5><p>Q.html有缓存怎么办？一发包就没有加载到最新的module.js会报错？总不能让用户一直清楚缓存把？<br><br>A:在打包的时候，不要把上个版本的module.js清楚，将上个版本要发的文件和这次新生成的后缀名字的文件都保存下来，确保不白屏报错，等用户重新登陆之后自动会获取新的<br>麻烦点：就是要一直去保存上个版本，然后定期去删历届版本。不过效果很好。。插件发布以后再也没有什么白屏什么问题爆出来了。。</p>
-<hr>
-<p>Q:防劫持。我们的文件被劫持。。。虽然我们有https<br><br>1.尽量把js打成一个文件。<br>因为如果有两个文件，一个被劫持，就挂了。<br>   一个文件，如果劫持的代码在尾部。。那还有一线生机。<br>2.把module.js直接打进去html，如果文件很大，应该也不太好<br>3.去投诉运营商</p>
-<hr>
-<p>Q:打包过程中为什么我已经执行压缩css了，但是压缩完毕以后还是未压缩状态<br><br>A:打包命令是异步的，你这边压缩好了，下一个命令把你编译了，解决办法如下<br>1.给命令加执行顺序<br>    <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'js'</span>, [<span class="string">'clean'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> gulp.src(moduleFile)</div><div class="line">  .pipe(concat(<span class="string">'modules.js'</span>))</div><div class="line">  .pipe(.dest(<span class="string">'./modules'</span>))</div><div class="line">  &#125;);</div></pre></td></tr></table></figure></p>
-<pre><code>在js 命令之后执行clean
-</code></pre><ol>
-<li>pipe 之后加回调</li>
-<li>分装成promise</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>么么哒<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/pay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端基础</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/24/gulp初级入门学习/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/08/08/rss服务和稍候阅读信息管理体系/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          如何建立一套属于个人的信息管理系统？
-        
-      </div>
-    </a>
   
   
-    <a href="/2016/07/04/ajax创建过程/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">拼命发ajax的life。</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
+    
 
 
           </div>
@@ -402,8 +235,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
