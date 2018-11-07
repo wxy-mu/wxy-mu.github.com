@@ -161,6 +161,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-函数编程理解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/07/函数编程理解/">对于函数式编程，我有话说。</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/07/函数编程理解/" class="archive-article-date">
+  	<time datetime="2018-11-07T15:35:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>每次讲起函数式编程，都会有一种很晦涩难懂的感觉，看过好几篇关于函数式编程的东西，但是总觉得一知半解，那就根据自己的‘一知’，来真正了解一下函数时编程。</p>
+<h3 id="纯函数"><a href="#纯函数" class="headerlink" title="纯函数"></a>纯函数</h3><p>what：什么是纯函数?<br><b>纯函数的定义是，对于相同的输入，永远会有相同的输出，而且没有任何可观察的副作用，也不依赖外部环境的状态。</b><br>（这个解释是否有点熟悉，我们在分享redux的时候，其中的reducer函数就是具有这些特质的存在。）</p>
+<p>how：我们举个例子吧~关于是么是‘纯’的什么是’不纯‘的？<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> example = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line"><span class="comment">//纯的</span></div><div class="line">example.slice(<span class="number">0</span>,<span class="number">2</span>) <span class="comment">// [1,2]</span></div><div class="line">example.slice(<span class="number">0</span>,<span class="number">2</span>) <span class="comment">// [1,2]</span></div><div class="line"><span class="comment">//不纯的</span></div><div class="line">example.splice(<span class="number">0</span>,<span class="number">3</span>) <span class="comment">//[1,2,3]</span></div><div class="line">example.splice(<span class="number">0</span>,<span class="number">3</span>) <span class="comment">//[4,5]</span></div></pre></td></tr></table></figure></p>
+<p>why：存在即合理，为什么需要这样子的函数呢？那么这样子的函数在实际开发中有什么好处呢？</p>
+<h6 id="总结一下特性"><a href="#总结一下特性" class="headerlink" title="总结一下特性"></a>总结一下特性</h6><ol>
+<li>绝大部分纯函数应该拥有一或多个参数值。</li>
+<li>纯函数必须要有返回值。</li>
+<li>相同输入的纯函数的返回值必须一致。</li>
+<li>纯函数不能够产生任何的副作用。</li>
+<li>函数的结果的可预测性，以及带来的测试可控性 </br>
+        
+          <a class="article-more-a" href="/2018/11/07/函数编程理解/index.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端基础</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/07/函数编程理解/index.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-async介绍和源码解析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -920,82 +1005,10 @@
 
 
   
-    <article id="post-Blog-travel" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/26/Blog-travel/">just want to say something</a>
-    </h1>
-  
-
-        
-        <a href="/2016/06/26/Blog-travel/" class="archive-article-date">
-  	<time datetime="2016-06-26T13:46:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>很清晰的记得去年的6月25日拿完毕业证，原来我已经毕业一整年了，很巧的是，明天是我24岁的阳历生日。<br>所以现在的我是毕业一整年，整整24周岁的我。<br>我还记得刚毕业找到工作的开心，我还记得被面试时候的蒙蔽，我还记得面完试，大汗淋漓，手机没有电，找不到回去的路的无奈。<br>原来已经一年了。<br>
-        
-          <a class="article-more-a" href="/2016/06/26/Blog-travel/index.html#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/06/26/Blog-travel/index.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
